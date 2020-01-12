@@ -305,7 +305,16 @@ input[type=submit] {
   float: left;
   width: 50%;
 }
-
+@media only screen and (max-width: 720px) {
+  /* For mobile phones: */
+  .column {
+    float: inherit;
+    width: 100%;
+  }
+  .modal-content{
+    height:900px!important;
+  }
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
