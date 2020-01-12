@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Seleção de personagem</title>
+    <script src="../dependencies/howler.js/src/howler.core.js"></script>
+    <script src="../dependencies/annyang.js"></script>
+  </head>
+  <body>
+    <script src="../js/render-character.js"></script>
+    <script src="../js/characters.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/modal_renderer.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/char_selection.css" />
+    <link rel="stylesheet" type="text/css" href="../css/modal.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <h1
+      class="title"
+      style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+    >
+      <img src="../image/logo_4.png" />
+    </h1>
+
+    <div id="app" class="container">
+     
+      
+    </div>
+    <div class="container2">
+      <div class="menu-toggle">
+        <span class="fa fa-plus"></span>
+      </div>
+
+      <div class="menu-round">
+        <!--  <div class="btn-app">
+          <div class="fa fa-address-card"></div>
+        </div>
+        -->
+        <div class="btn-app">
+          <div class="fa fa-user-circle" onclick="redirect('profile')"></div>
+        </div>
+        <div class="btn-app">
+          <div class="fa fa-cogs"></div>
+        </div>
+      </div>
+      <!--<div class="menu-line">
+        <div class="btn-app">
+          <div class="fa fa-gift"></div>
+        </div>
+        <div class="btn-app">
+          <div class="fa fa-image"></div>
+        </div>
+        <div class="btn-app">
+          <div class="fa fa-vine"></div>
+        </div>
+      </div>
+    --></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="container3">
+          <div class="column">
+            <div id="appPerson">
+              <card id="create_cardboard" data-image="../image/elfo.png">
+                <h1 slot="header">Elfo</h1>
+                <p slot="content">
+                  Os elfos são seres sabios e de vida longa
+                </p>
+              </card>
+            </div>
+          </div>
+          <div class="column">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nome</label>
+                </div>
+                <div class="col-75">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Your name.."
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Background story</label>
+                </div>
+                <div class="col-75">
+                  <textarea rows="22"></textarea>
+                </div>
+              </div>
+
+              <div style="margin-top: 15px;" class="row">
+                <input type="submit" value="Enviar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/play-sounds.js"></script>
+    <script src="../js/redirections.js"></script>
+    <script src="../js/load-voice.js"></script>
+    <script src="../js/modal.js"></script>
+    <script> renderCharacter(characters);</script>
+    <script>
+    $(document).ready(function() {
+        $('div.card').click(function() {
+            openModal();
+        });
+    });
+    </script>
+    <script src="../js/char-selection.js"></script>
+    
+    <script>
+      $(".menu-toggle").click(function() {
+        $(".menu-toggle").toggleClass("open");
+        $(".menu-round").toggleClass("open");
+        $(".menu-line").toggleClass("open");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "helper_rpg",
+  "version": "0.0.1",
+  "description": "A simple RPG helper",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron .",
+    "server": "node ./api/main.js"
+  },
+  "keywords": [
+    "rpg",
+    "electron",
+    "node",
+    "speech",
+    "recognition"
+  ],
+  "author": "Alexandre Vieira",
+  "license": "MIT",
+  "dependencies": {
+    "browser-window": "^0.4.0",
+    "dotenv": "^8.2.0",
+    "electron": "^7.1.7",
+    "express": "^4.17.1"
+  }
+}

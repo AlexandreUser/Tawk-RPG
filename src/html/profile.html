@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>
+      Profile - {name}
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <body>
+    <h1
+    class="title"
+    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+  >
+  <img src="../image/logo_4.png">
+    
+  </h1>
+    <div class="frame" >
+      <div class="center">
+        <div class="profile">
+          <div class="image">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <img
+              src="https://media.licdn.com/dms/image/C4D03AQFUdBikLtXJoA/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=su4QEpEIjMmAJRB7t-b6mF09g8kttcOlATBTUDo9yDk"
+              width="70"
+              height="70"
+              alt="Jessica Potter"
+            />
+          </div>
+
+          <div class="name">Alexandre Vieira</div>
+          <div class="job">RPG player</div>
+
+          <div class="actions">
+            <button class="btn">My characters</button>
+            <button class="btn" onclick="redirect('new')">Create new character</button>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="box">
+            <span class="value">10</span>
+            <span class="parameter">Characters</span>
+          </div>
+          <div class="box">
+            <span class="value">6</span>
+            <span class="parameter">Partners</span>
+          </div>
+          <div class="box">
+            <span class="value">2</span>
+            <span class="parameter">Scenarios</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+        <div class="menu-toggle">
+          <span class="fa fa-plus"></span>
+        </div>
+  
+        <div class="menu-round">
+         <!-- <div class="btn-app">
+            <div class="fa fa-address-card"></div>
+          </div>
+          <div class="btn-app">
+            <div class="fa fa-user-circle"></div>
+          </div>-->
+          <div class="btn-app">
+            <div class="fa fa-cogs"></div>
+          </div>
+        </div>
+        <!--
+    <div class="menu-line">
+          <div class="btn-app">
+            <div class="fa fa-gift"></div>
+          </div>
+          <div class="btn-app">
+            <div class="fa fa-image"></div>
+          </div>
+          <div class="btn-app">
+            <div class="fa fa-vine"></div>
+          </div>
+        </div>
+      --> 
+      </div>
+      <script src="../js/redirections.js"></script>
+
+      <script>
+        $(".menu-toggle").click(function() {
+          $(".menu-toggle").toggleClass("open");
+          $(".menu-round").toggleClass("open");
+          $(".menu-line").toggleClass("open");
+        });
+      </script>
+  </body>
+</html>
