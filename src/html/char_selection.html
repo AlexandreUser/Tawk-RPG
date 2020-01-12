@@ -117,8 +117,8 @@
     <script> renderCharacter(characters);</script>
     <script>
     $(document).ready(function() {
-        $('div.card').click(function() {
-            openModal();
+        $('div.card-wrap').click(function() {
+            openModal(this.id,characters);
         });
     });
     </script>

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+      <title>
+        Login - Tawk
+      </title> 
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <body>
+    <h1
+    class="title"
+    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+  >
+  <img src="../image/logo_4.png">
+    
+  </h1>
+
+    <link rel="stylesheet" href="../css/login.css" />
+    
+    <div class="login-page">
+
+      <div class="form">
+        <form   action="/register" method="post" class="register-form">
+          <input type="text" placeholder="usuario" />
+          <input type="password" placeholder="senha" />
+          <input type="text" placeholder="email" />
+          <button class="btn">Criar</button>
+          <p class="message">Já possui conta ? <a href="#">Logar</a></p>
+        </form>
+        <form action="/login" method="post" class="login-form">
+          <input type="text" placeholder="Usuario" />
+          <input type="password" placeholder="Senha" />
+          <button class="btn">login</button>
+          <p class="message">
+            Não possui conta? <a href="#">Criar uma conta</a>
+          </p>
+        </form>
+      </div>
+      
+    </div>
+
+    <script src="../js/change-form-login.js"></script>
+
+
+  </body>
+  
+</html>
