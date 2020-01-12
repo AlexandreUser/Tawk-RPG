@@ -3,6 +3,7 @@ function renderCharacter(characters) {
     let card = document.createElement("card");
     dataImage = "../image/" + characters[i].urlFor;
     card.setAttribute("data-image", dataImage);
+    card.id = characters[i].name;
     let mainText = document.createElement("h1");
     mainText.slot = "header";
     mainText.innerText = characters[i].name;
